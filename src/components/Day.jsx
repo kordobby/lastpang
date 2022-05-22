@@ -38,7 +38,6 @@ const DayText = styled.div`
   justify-content: center;
   align-items: center;
   background-color: var(--red);
-
   font-size : 18px;
   color : white;
   font-weight : 600;

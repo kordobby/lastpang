@@ -77,9 +77,10 @@ const DetailDay = styled.span`
 
 const WrapCountScore =styled.div`
   display : flex;
-  justify-contents : center;
-  align-contents : center;
   margin-bottom : 30px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 `;
 
 const CountScore= styled.div`
@@ -107,9 +108,7 @@ const CountScore= styled.div`
     background-color: var(--yellow) };
     `;
 
-const Comment = styled.p`
-  color : white;
-`;
+
 const RecordButton = styled.button`
   width: 250px;
   height : 50px;
