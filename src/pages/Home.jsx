@@ -29,7 +29,9 @@ function Home() {
   let GetWeek = ['일', '월', '화', '수', '목', '금', '토'];
 
   let ChangeDay = ["","","","","","",""];
-  let DayList = ChangeDay.map( (value, index) => ( value = GetWeek[GetDate.getDay() + index] ));
+  let DayList = ChangeDay.map( (value, index) => ( value = GetWeek[(GetDate.getDay() + index) %7] ));
+  console.log(GetDate.getDay());
+  console.log(DayList);
 
   return (
     <HomeContainer>
